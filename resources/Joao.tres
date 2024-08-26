@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PlayerProfile" load_steps=2 format=3 uid="uid://cxkmxkg85j2iq"]
+
+[ext_resource type="Script" path="res://player_profile.gd" id="1_r27c4"]
+
+[resource]
+script = ExtResource("1_r27c4")
+nome = "João"
+genero = 1
+idade = 10
