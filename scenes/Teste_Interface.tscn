@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cq1idgqqpjce3"]
+[gd_scene load_steps=7 format=3 uid="uid://cq1idgqqpjce3"]
 
 [ext_resource type="Texture2D" uid="uid://dacqv0wj4aaog" path="res://UI/Textures/Border.png" id="1_lf63c"]
 [ext_resource type="Texture2D" uid="uid://bftdw2qc1yjp1" path="res://icon.svg" id="2_8l5uk"]
+[ext_resource type="Script" path="res://scenes/LoadSceneButton.gd" id="3_estl6"]
 
 [sub_resource type="Gradient" id="Gradient_ypikk"]
 colors = PackedColorArray(0.470076, 0.470076, 0.470076, 1, 0.374139, 0.374139, 0.374139, 1)
@@ -9,6 +10,8 @@ colors = PackedColorArray(0.470076, 0.470076, 0.470076, 1, 0.374139, 0.374139, 0
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_qrfjy"]
 gradient = SubResource("Gradient_ypikk")
 fill_to = Vector2(0, 1)
+
+[sub_resource type="PackedScene" id="PackedScene_auxu1"]
 
 [node name="Teste_Interface" type="Control"]
 layout_mode = 3
@@ -222,10 +225,10 @@ grow_vertical = 2
 [node name="PanelContainer4" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.15
-anchor_top = 0.5
-anchor_right = 0.85
-anchor_bottom = 1.0
+anchor_left = 0.4
+anchor_top = 0.55
+anchor_right = 0.6
+anchor_bottom = 0.9
 offset_left = 1.2
 offset_right = 1.20001
 grow_horizontal = 2
@@ -233,5 +236,10 @@ grow_vertical = 0
 
 [node name="TextureButton" type="TextureButton" parent="PanelContainer4"]
 layout_mode = 2
+action_mode = 0
 texture_normal = ExtResource("2_8l5uk")
 stretch_mode = 5
+script = ExtResource("3_estl6")
+scene_to_load = SubResource("PackedScene_auxu1")
+
+[connection signal="pressed" from="PanelContainer4/TextureButton" to="PanelContainer4/TextureButton" method="_on_pressed"]
