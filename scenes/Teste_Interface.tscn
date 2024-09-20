@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dacqv0wj4aaog" path="res://UI/Textures/Border.png" id="1_lf63c"]
 [ext_resource type="Texture2D" uid="uid://bftdw2qc1yjp1" path="res://icon.svg" id="2_8l5uk"]
-[ext_resource type="Script" path="res://scenes/LoadSceneButton.gd" id="3_estl6"]
+[ext_resource type="Script" path="res://scripts/LoadSceneButton.gd" id="3_estl6"]
 
 [sub_resource type="Gradient" id="Gradient_ypikk"]
 colors = PackedColorArray(0.470076, 0.470076, 0.470076, 1, 0.374139, 0.374139, 0.374139, 1)
