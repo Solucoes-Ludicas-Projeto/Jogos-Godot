@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgasyg10h2arj"]
+
+[ext_resource type="Texture2D" uid="uid://c53bvc3007lv4" path="res://Sprites/FishingNet.png" id="1_s3qy1"]
+
+[node name="FishingNet" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_s3qy1")

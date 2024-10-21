@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsj7y3mrkgay3"]
+
+[ext_resource type="Texture2D" uid="uid://yjdv7atqt455" path="res://Sprites/WaterBackground.jpg" id="1_0ge4c"]
+[ext_resource type="Script" path="res://Scripts/Points.gd" id="1_ses65"]
+[ext_resource type="Script" path="res://Scripts/Spawner.gd" id="3_uoa2h"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_ses65")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI_Points" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.0
+offset_right = 54.0
+offset_bottom = 30.0
+grow_horizontal = 2
+scale = Vector2(1.1, 1.1)
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Pontos: 0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(569, 321)
+scale = Vector2(0.87, 0.87)
+texture = ExtResource("1_0ge4c")
+
+[node name="Spawner" type="Container" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_uoa2h")
+
+[node name="Timer" type="Timer" parent="Spawner"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]
