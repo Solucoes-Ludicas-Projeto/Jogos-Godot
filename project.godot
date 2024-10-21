@@ -10,14 +10,22 @@ config_version=5
 
 [application]
 
+<<<<<<< HEAD
 config/name="JogoDeCaptura"
 run/main_scene="res://Main_Scene.tscn"
+=======
+config/name="New Game Project"
+>>>>>>> 7e1839550e0beec0752248b709796d86a9a1d15d
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [dotnet]
 
+<<<<<<< HEAD
 project/assembly_name="JogoDeCaptura"
+=======
+project/assembly_name="New Game Project"
+>>>>>>> 7e1839550e0beec0752248b709796d86a9a1d15d
 
 [rendering]
 

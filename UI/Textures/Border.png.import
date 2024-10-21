@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://b0wtqh7jvpswu"
-=======
-uid="uid://bftdw2qc1yjp1"
->>>>>>> 7e1839550e0beec0752248b709796d86a9a1d15d
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+uid="uid://dacqv0wj4aaog"
+path="res://.godot/imported/Border.png-ad4a3533d238400fcf170f3aabfa400c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+source_file="res://UI/Textures/Border.png"
+dest_files=["res://.godot/imported/Border.png-ad4a3533d238400fcf170f3aabfa400c.ctex"]
 
 [params]
 
@@ -36,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
