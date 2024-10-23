@@ -1,10 +1,7 @@
 extends StaticBody2D
 
+var color = Color(Color.MEDIUM_PURPLE, 0.7)
+
 func _ready():
-	modulate = Color(Color.MEDIUM_PURPLE, 0.7)
+	modulate = color
 	
-func _process(delta):
-	if global.is_dragging:
-		visible = true
-	else:
-		visible = false

@@ -1,15 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3b0bjv0l2rq5"]
+[gd_scene load_steps=4 format=3 uid="uid://b3b0bjv0l2rq5"]
 
 [ext_resource type="PackedScene" uid="uid://cfxeu57iif1dh" path="res://nodes/drop_platform.tscn" id="1_7ihgj"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop_test.gd" id="1_mrkdx"]
 [ext_resource type="PackedScene" uid="uid://r3bkoonbbhjl" path="res://nodes/drag_object.tscn" id="2_dejqq"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_mrkdx")
 
-[node name="platform" parent="." instance=ExtResource("1_7ihgj")]
+[node name="platform" parent="." groups=["flor_amarela"] instance=ExtResource("1_7ihgj")]
 position = Vector2(576, 492)
 
-[node name="platform2" parent="." instance=ExtResource("1_7ihgj")]
+[node name="platform2" parent="." groups=["flor_vermelha"] instance=ExtResource("1_7ihgj")]
 position = Vector2(840, 160)
 
-[node name="object" parent="." instance=ExtResource("2_dejqq")]
+[node name="object" parent="." groups=["flor_vermelha"] instance=ExtResource("2_dejqq")]
 position = Vector2(248, 192)
